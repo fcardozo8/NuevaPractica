@@ -1,7 +1,8 @@
 package dominio;
 
 import java.util.ArrayList;
-import java.util.function.BooleanSupplier;
+import java.util.Comparator;
+import java.util.function.Predicate;
 
 public class GestorVehiculo {
 	private static GestorVehiculo gestor;
@@ -37,13 +38,9 @@ public class GestorVehiculo {
 		misVehiculos = new ArrayList<Vehiculo>() ;
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 
+
+	public ArrayList<Vehiculo> getVehiculos(Predicate<Vehiculo> p2, Comparator<Vehiculo> com) {
+		return misVehiculos;
+	}
 }
